@@ -1,0 +1,121 @@
+body {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  gap: 10px;
+}
+
+.heading {
+  font: bolder;
+  color: white;
+}
+
+#container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+#progress_bar_container {
+  height: 10px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progress_bar {
+  height: 100%;
+  width: 0;
+  background-color: #ff204e;
+  transition: width 0.5s ease;
+}
+
+.first_heading_cotainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.first_heaing {
+  margin: 0px 10px;
+  color: #ff204e;
+}
+
+.small_text {
+  color: gray;
+}
+
+.form {
+  width: 90%;
+  position: absolute;
+  top: 100px;
+  left: 5px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+#questionnaire {
+  padding: 5px 20px;
+  margin: 10px 0;
+}
+#questionnaire2 {
+  padding: 5px 20px;
+  margin: 10px 0;
+  left: 600px;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.input_cont {
+  background-color: #eeeeee;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.input_field {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+.input_cont_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+#back_button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_button {
+  background-color: #ff204e;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  margin: 5px;
+  width: 150px;
+}

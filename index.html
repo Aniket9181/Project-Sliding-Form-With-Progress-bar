@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Main heading of the page -->
+  <div class="main_heading">
+    <h1 class="heading">Driving License Renewal</h1>
+  </div>
+  <!-- container placing context in the center of the page -->
+  <div id="container">
+    <!-- progress bar of the page -->
+    <div id="progress_bar_container">
+      <div id="progress_bar"></div>
+    </div>
+    <!-- firts heading inside the container box -->
+    <div class="first_heading_cotainer">
+      <h2 class="first_heaing">Let's get started!</h2>
+      <span class="small_text">Add your details(As per your registered records)</span>
+    </div>
+    <!-- Question asked are starting from here -->
+    <div id="questionnaire" class="form">
+      <!-- 1st question -->
+      <div class="name_container question">
+        <label> Name</label>
+        <div class="input_cont">
+          <input type="text" id="text_input1" placeholder="Enter Name" class="input_field" required>
+        </div>
+      </div>
+      <!-- 2nd question -->
+      <div class="nature_container question">
+        <label> Nature of Driving License</label>
+        <div class="input_cont_box">
+          <div class="input_cont">
+            <input type="radio" name="nature_of_driving" value="option1">Private
+          </div>
+          <div class="input_cont">
+            <input type="radio" name="nature_of_driving" value="option2">Commercial
+          </div>
+        </div>
+      </div>
+      <!-- 3rd question -->
+      <div class="type_of_previous_driving question ">
+        <label> Type of Previous Driving License</label>
+        <div class="input_cont_box radio-container">
+          <div class="input_cont">
+            <input type="radio" name="type_of_driving" value="option1" class="next">Paper Driving License
+          </div>
+          <div class="input_cont">
+            <input type="radio" name="type_of_driving" value="option2" class="next">Smart Driving License
+          </div>
+        </div>
+      </div>
+      <!-- back button for navigation -->
+      <div id="back_button_container">
+        <button class="back_button">&lt; Back</button>
+      </div>
+    </div>
+
+    <!-- Second form to display after clicking -->
+    <div id="questionnaire2" class="form">
+      <!-- 4th question -->
+      <div class="Place_container question">
+        <label>Place where Driving License was Issued</label>
+        <div class="input_cont">
+          <input type="text" id="text_input1" placeholder="Enter Name" class="input_field" required>
+        </div>
+      </div>
+      <!-- 5th question -->
+      <div class="year_of_issue_container question ">
+        <label>Issued Year of License</label>
+        <div class="input_cont">
+          <input type="number" min="1950" max="2024" id="text_input1" placeholder="Choose Issued Year of License"
+            class="input_field" required>
+        </div>
+      </div>
+      <!-- 6th question -->
+      <div class="type_of_driving question">
+        <label> Type of Previous Driving License</label>
+        <div class="input_cont">
+          <select id="select_box2" class="input_field">
+            <option value="">Choose Expired Year of License</option>
+            <option value="option1">2024</option>
+            <option value="option1">2023</option>
+            <option value="option1">2022</option>
+            <option value="option1">2021</option>
+            <option value="option2">2020</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="back_button_container">
+        <!-- back button for navigation -->
+        <button class="back_button" id="back_btn">&lt; Back</button>
+        <!-- submit button to submit details -->
+        <button class="back_button" id="submit_btn">Submit</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
